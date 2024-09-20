@@ -1,0 +1,69 @@
+/* Animação de entrada da logo */
+@keyframes AparecerParaEsquerda {
+   0% {
+      opacity: 0;
+      transform: translateX(-100px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+/* Fim animação de entrada da logo */
+
+/* Animação de entrada da logo */
+@keyframes AparecerDaDireita {
+   0% {
+      opacity: 0;
+      transform: translateX(100px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+/* Fim animação de entrada da logo */
+
+/* Animação de entrada dos links */
+@keyframes AparecerDeCima {
+   0% {
+      opacity: 0;
+      transform: translateY(-100px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+/* Fim animação de entrada dos links */
+
+/* Animação de entrada dos links */
+@keyframes AparecerDeBaixo {
+   0% {
+      opacity: 0;
+      transform: translateY(100px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+/* Fim animação de entrada dos links */
+
+/* Animação Zoom de entrada dos links */
+@keyframes imgZoomAparecer {
+   0% {
+      opacity: 0;
+      transform: scale(0);
+   }
+
+   100% {
+      opacity: 1;
+      transform: scale(1);
+   }
+}
+/* Fim animação Zoom de entrada dos links */

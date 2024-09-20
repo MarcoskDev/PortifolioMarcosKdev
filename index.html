@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>MarcosKdev</title>
+      <link
+         rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="assets/css/animacao__entrada.css" />
+      <!-- icones Boxicons-->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"
+      />
+      <!-- icones Fontawesome-->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+   </head>
+   <body>
+      <header class="cabecalho">
+         <a class="logo" href="#">MarcosKdev</a>
+         <nav class="navbar ativo">
+            <a class="inicio" href="#inicio" style="--i: 1">Inicio</a>
+            <a class="sobre" href="#sobre" style="--i: 2">Sobre</a>
+            <a href="#projeto" style="--i: 3">Projetos</a>
+            <a href="#habilidades" style="--i: 4">Habilidades</a>
+            <a href="#infor__carreira__e__academica" style="--i: 4"
+               >Carreira e Academica</a
+            >
+            <a href="#contato" style="--i: 5">Contato</a>
+         </nav>
+      </header>
+
+      <main id="inicio">
+         <img
+            class="img__inicio__top__celular"
+            src="assets/img/minha_logo.png"
+            alt=""
+         />
+         <div class="inicio__container">
+            <h3>Hello, It's me</h3>
+            <h1>Marcos Kaynan</h1>
+            <h3>Sou <span>Desenvolvedor Frontend</span></h3>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+               officiis minus placeat voluptas voluptatum quisquam vitae earum
+               exercitationem, recusandae nam libero perspiciatis, incidunt
+               officia sit iste nobis autem sed et?
+            </p>
+            <div class="social__media">
+               <a href="#" style="--i: 6"
+                  ><i class="bx bxl-instagram-alt"></i
+               ></a>
+               <a href="#" style="--i: 7"
+                  ><i class="bx bxl-linkedin-square"></i
+               ></a>
+               <a href="#" style="--i: 8"><i class="bx bxl-github"></i></a>
+               <a href="#" style="--i: 9"><i class="bx bxl-youtube"></i></a>
+            </div>
+            <a class="btn__cv" href="#">Download CV</a>
+         </div>
+
+         <img class="img__inicio" src="assets/img/minha_logo.png" alt="" />
+      </main>
+
+      <section id="sobre">
+         <img class="img__sobre" src="assets/img/minha_logo.png" alt="" />
+
+         <div class="desc__sobre">
+            <h2>Sobre mim</h2>
+            <h3>Marcos Kaynan</h3>
+            <p>
+               Em 2024, concluí meu ensino médio na Escola IEMA - Axixá. Logo em
+               seguida, me formei em Técnico em Redes de Computadores pela mesma
+               instituição, onde adquiri conhecimentos sólidos em configuração,
+               manutenção e segurança de redes, bem como habilidades práticas em
+               administração de servidores e resolução de problemas de rede.
+               Durante minha formação em Redes de Computadores, estudei
+               protocolos como TCP/IP e pratiquei virtualização e computação em
+               nuvem. Posteriormente, me formei como desenvolvedor front-end
+               pelo programa Alura e o Inova Maranhão, aprimorando minhas
+               habilidades em programação e desenvolvimento de interfaces web.
+               Paralelamente, participei ativamente em projetos de robótica com
+               a plataforma LEGO EV3, também na Escola IEMA - Axixá, o que
+               contribuiu significativamente para meu interesse contínuo na área
+               de tecnologia.
+            </p>
+         </div>
+      </section>
+
+      <section id="projeto">
+         <div class="menu__projeto">
+            <div class="div__titulos">
+               <h2>Trabalhos e projetos</h2>
+               <h3 id="title__projetos"></h3>
+            </div>
+            <nav class="navbar__projeto">
+               <button class="active">
+                  <i class="bx bxs-window-alt"></i>
+                  Front-end
+               </button>
+               <button id="btn__design">
+                  <i class="fa-brands fa-figma"></i>
+                  UI Design
+               </button>
+            </nav>
+         </div>
+
+         <div class="container__projeto esconder__projeto">
+            <div class="box__p">
+               <img
+                  class="capa__projeto"
+                  src="assets/img/traprojto.jpg"
+                  alt=""
+               />
+               <h3>Sobre:</h3>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Officia porro asperiores saepe beatae. Perferendis modi
+                  necessitatibus quidem tempora iste quasi.
+               </p>
+               <div class="linguagens__utilizadas">
+                  <span>Html</span>
+                  <span>css</span>
+                  <span>javaScript</span>
+               </div>
+            </div>
+
+            <div class="box__p">
+               <img
+                  class="capa__projeto"
+                  src="assets/img/traprojto.jpg"
+                  alt=""
+               />
+               <h3>Sobre:</h3>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Officia porro asperiores saepe beatae. Perferendis modi
+                  necessitatibus quidem tempora iste quasi.
+               </p>
+               <div class="linguagens__utilizadas">
+                  <span>Html</span>
+                  <span>css</span>
+                  <span>javaScript</span>
+               </div>
+            </div>
+
+            <div class="box__p">
+               <img
+                  class="capa__projeto"
+                  src="assets/img/traprojto.jpg"
+                  alt=""
+               />
+               <h3>Sobre:</h3>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Officia porro asperiores saepe beatae. Perferendis modi
+                  necessitatibus quidem tempora iste quasi.
+               </p>
+               <div class="linguagens__utilizadas">
+                  <span>Html</span>
+                  <span>css</span>
+                  <span>javaScript</span>
+               </div>
+            </div>
+
+            <div class="box__p">
+               <img
+                  class="capa__projeto"
+                  src="assets/img/traprojto.jpg"
+                  alt=""
+               />
+               <h3>Sobre:</h3>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Officia porro asperiores saepe beatae. Perferendis modi
+                  necessitatibus quidem tempora iste quasi.
+               </p>
+               <div class="linguagens__utilizadas">
+                  <span>Html</span>
+                  <span>css</span>
+                  <span>javaScript</span>
+               </div>
+            </div>
+
+            <div class="box__p">
+               <img
+                  class="capa__projeto"
+                  src="assets/img/traprojto.jpg"
+                  alt=""
+               />
+               <h3>Sobre:</h3>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Officia porro asperiores saepe beatae. Perferendis modi
+                  necessitatibus quidem tempora iste quasi.
+               </p>
+               <div class="linguagens__utilizadas">
+                  <span>Html</span>
+                  <span>css</span>
+                  <span>javaScript</span>
+               </div>
+            </div>
+
+            <div class="box__p">
+               <img
+                  class="capa__projeto"
+                  src="assets/img/traprojto.jpg"
+                  alt=""
+               />
+               <h3>Sobre:</h3>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Officia porro asperiores saepe beatae. Perferendis modi
+                  necessitatibus quidem tempora iste quasi.
+               </p>
+               <div class="linguagens__utilizadas">
+                  <span>Html</span>
+                  <span>css</span>
+                  <span>javaScript</span>
+               </div>
+            </div>
+
+            <div class="box__p">
+               <img
+                  class="capa__projeto"
+                  src="assets/img/traprojto.jpg"
+                  alt=""
+               />
+               <h3>Sobre:</h3>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Officia porro asperiores saepe beatae. Perferendis modi
+                  necessitatibus quidem tempora iste quasi.
+               </p>
+               <div class="linguagens__utilizadas">
+                  <span>Html</span>
+                  <span>css</span>
+                  <span>javaScript</span>
+               </div>
+            </div>
+
+            <div class="box__p">
+               <img
+                  class="capa__projeto"
+                  src="assets/img/traprojto.jpg"
+                  alt=""
+               />
+               <h3>Sobre:</h3>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Officia porro asperiores saepe beatae. Perferendis modi
+                  necessitatibus quidem tempora iste quasi.
+               </p>
+               <div class="linguagens__utilizadas">
+                  <span>Html</span>
+                  <span>css</span>
+                  <span>javaScript</span>
+               </div>
+            </div>
+         </div>
+
+         <div class="designer">
+            <div class="box__d">
+               <img
+                  class="capa__projeto"
+                  src="assets/img/traprojto.jpg"
+                  alt=""
+               />
+               <h3>Sobre:</h3>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Officia porro asperiores saepe beatae. Perferendis modi
+                  necessitatibus quidem tempora iste quasi.
+               </p>
+               <div class="linguagens__utilizadas">
+                  <span>Html</span>
+                  <span>css</span>
+                  <span>javaScript</span>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="habilidades">
+         <h2>🧑‍💻 Skills · Experiências</h2>
+         <h3>Tecnologias e habilidades</h3>
+         <div class="tecnologias__uso">
+            <h3>Techs que uso no dia a dia</h3>
+            <div class="Tecnologias">
+               <i class="bx bxl-html5"></i>
+               <i class="bx bxl-css3"></i>
+               <i class="bx bxl-javascript"></i>
+               <i class="bx bxl-github"></i>
+               <i class="bx bxl-git"></i>
+               <i class="bx bxl-typescript"></i>
+               <i class="bx bxl-nodejs"></i>
+               <i class="bx bxl-figma"></i>
+               <i class="bx bxl-react"></i>
+            </div>
+         </div>
+         <div class="tecnologias__uso">
+            <h3>Outras techs com que já realizei projetos</h3>
+            <div class="Tecnologias">
+               <i class="bx bxl-vuejs"></i>
+               <i class="bx bxl-nodejs"></i>
+               <i class="bx bxl-sass"></i>
+               <a href="https://icons8.com/icon/w0gLt4XNjxKm/mysql"></a>
+               <a href="https://icons8.com"></a>
+            </div>
+         </div>
+      </section>
+
+      <section id="infor__carreira__e__academica">
+         <h2>💼 Carreira</h2>
+         <h3>Trajetória até aqui</h3>
+
+         <div class="container__carreira__e__academica">
+            <div class="carreira__e__academica">
+               <div class="titulo__carreira">
+                  <h3>Área profissional</h3>
+                  <h4>2016 · Atualmente</h4>
+               </div>
+               <div class="box__carreira__e__academica">
+                  <h3>Desenvolvedor Front-end na Ensinio</h3>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Similique nesciunt reiciendis natus enim. Iste laborum
+                     expedita nisi assumenda ad labore, et, quia, magnam quod
+                     amet illo! Debitis pariatur dolor veniam.
+                  </p>
+
+                  <div class="tempo__carreira__e__academica">
+                     <span>1 ano e 7 meses</span>
+                     <span>Abril/2021 · Atualmente</span>
+                  </div>
+               </div>
+
+               <div class="box__carreira__e__academica">
+                  <h3>Desenvolvedor Front-end na Ensinio</h3>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Similique nesciunt reiciendis natus enim. Iste laborum
+                     expedita nisi assumenda ad labore, et, quia, magnam quod
+                     amet illo! Debitis pariatur dolor veniam.
+                  </p>
+
+                  <div class="tempo__carreira__e__academica">
+                     <span>1 ano e 7 meses</span>
+                     <span>Abril/2021 · Atualmente</span>
+                  </div>
+               </div>
+
+               <div class="box__carreira__e__academica">
+                  <h3>Desenvolvedor Front-end na Ensinio</h3>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Similique nesciunt reiciendis natus enim. Iste laborum
+                     expedita nisi assumenda ad labore, et, quia, magnam quod
+                     amet illo! Debitis pariatur dolor veniam.
+                  </p>
+
+                  <div class="tempo__carreira__e__academica">
+                     <span>1 ano e 7 meses</span>
+                     <span>Abril/2021 · Atualmente</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="carreira__e__academica academica">
+               <div class="titulo__academica">
+                  <h3>Acadêmica</h3>
+                  <h4>2014 · Atualmente</h4>
+               </div>
+               <div class="box__carreira__e__academica">
+                  <h3>Técnico, Redes de Computadores</h3>
+                  <p>
+                     Em 2024, formei-me em Técnico em Redes de Computadores pelo
+                     IEMA - Axixá. Durante o curso, adquiri conhecimentos
+                     sólidos em configuração, manutenção e segurança de redes,
+                     além de desenvolver habilidades práticas em áreas como
+                     administração de servidores e solução de problemas de rede.
+                     A formação também incluiu estudos em protocolos de rede,
+                     como TCP/IP, e práticas de virtualização e computação em
+                     nuvem.
+                  </p>
+
+                  <div class="tempo__carreira__e__academica">
+                     <span>3 ano</span>
+                     <span>Dez/2024 · Atualmente</span>
+                  </div>
+               </div>
+
+               <div class="box__carreira__e__academica">
+                  <h3>Inglês · Conversação básico</h3>
+                  <p>
+                     No primeiro semestre de 2024, pude aprimorar meu nível de
+                     inglês (Hoje: básico) com um ano de curso de conversação no
+                     IEMA - Axixá, parte do Instituto Estadual de Educação,
+                     Ciência e Tecnologia do Maranhão (IEMA).
+                  </p>
+
+                  <div class="tempo__carreira__e__academica">
+                     <span>1 ano</span>
+                     <span>Básico</span>
+                  </div>
+               </div>
+
+               <div class="box__carreira__e__academica">
+                  <h3>Ensinio médio completo</h3>
+                  <p>
+                     Ao final de 2024, concluí meu ensino médio na escola IEMA -
+                     Axixá, parte do Instituto Estadual de Educação, Ciência e
+                     Tecnologia do Maranhão (IEMA).
+                  </p>
+
+                  <div class="tempo__carreira__e__academica">
+                     <span></span>
+                     <span>Dez/2024 · Formado</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <form id="contato" action="" method="post">
+         <h2>📬 Contatos</h2>
+         <h3>Vamos conversar!</h3>
+         <div class="container__contato">
+            <div class="input__contato">
+               <input type="text" placeholder="Seu nome" required />
+               <input type="email" placeholder="Seu email" required />
+               <textarea placeholder="Sua mensagem"></textarea>
+               <button class="btn__enviar__msg__ctt" type="submit">
+                  Enviar
+               </button>
+            </div>
+            <div class="container__meios_de_contato">
+               <h2>Ou contate-me aqui</h2>
+               <div class="meios_de_contato">
+                  <div class="div__icones__contato">
+                     <a href="#"><i class="bx bxl-github"></i></a>
+                  </div>
+                  <div class="div__icones__contato">
+                     <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+                  </div>
+                  <div class="div__icones__contato div__grande">
+                     <a href="#"><i class="bx bxs-envelope"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </form>
+
+      <footer>
+         <div class="logo__direitos__autorais">
+            <div class="logo">
+               <img src="assets/img/minha_logo.png" alt="" />
+            </div>
+            <p>
+               Desenvolvido por <br />
+               Marcos Kaynan @ 2024
+            </p>
+         </div>
+         <!--  <p>Você é o melhor</p> -->
+      </footer>
+
+      <script src="assets/script/script.js"></script>
+   </body>
+</html>
