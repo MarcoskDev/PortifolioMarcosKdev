@@ -210,6 +210,7 @@
    color: #fff;
    font-size: 0.8em;
    text-align: justify;
+   font-weight: 300;
 }
 /* fim sobre */
 
@@ -295,19 +296,29 @@
 
 .box__p > h3 {
    font-size: 0.8em;
-   font-weight: 600;
+   font-weight: 450;
    padding-top: 0.4rem;
 }
 
 .box__p > p {
    font-size: 0.6em;
+   font-weight: 300;
+   padding-top: 0.4rem;
+   text-align: justify;
+}
+
+.box__p > a {
+   color: var(--color-complementar);
+   font-size: 0.6em;
    font-weight: 500;
    padding-top: 0.4rem;
+   text-decoration: none;
 }
 
 .box__p > .linguagens__utilizadas {
    display: flex;
    gap: 0.4rem;
+   flex-wrap: wrap;
    padding-top: 1rem;
 }
 
@@ -636,9 +647,10 @@ footer > p {
    }
 
    #inicio {
+      height: auto;
       flex-direction: column;
       justify-content: center;
-      padding: 0 5%;
+      padding: 0 5% 3rem 5%;
    }
 
    #inicio > .img__inicio {
@@ -688,6 +700,12 @@ footer > p {
 
    #sobre > .desc__sobre {
       width: 100%;
+      text-align: center;
+   }
+
+   #sobre > .desc__sobre > p{
+      width: 100%;
+      text-align: center;
    }
 
    #sobre > .img__sobre {
