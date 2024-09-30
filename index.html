@@ -4,12 +4,11 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>MarcosKdev</title>
-      <link
-         rel="stylesheet"
-         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      />
       <link rel="stylesheet" href="assets/css/style.css" />
       <link rel="stylesheet" href="assets/css/animacao__entrada.css" />
+
+      <link rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
       <!-- icones Boxicons-->
       <link
          rel="stylesheet"
@@ -27,16 +26,19 @@
    <body>
       <header class="cabecalho">
          <a class="logo" href="#">MarcosKdev</a>
-         <nav class="navbar ativo">
-            <a class="inicio" href="#inicio" style="--i: 1">Inicio</a>
-            <a class="sobre" href="#sobre" style="--i: 2">Sobre</a>
-            <a href="#projeto" style="--i: 3">Projetos</a>
-            <a href="#habilidades" style="--i: 4">Habilidades</a>
-            <a href="#infor__carreira__e__academica" style="--i: 4"
-               >Carreira e Academica</a
-            >
-            <a href="#contato" style="--i: 5">Contato</a>
+         <nav class="navbar">
+            <a onclick="btnMenu()" href="#inicio" style="--i: 1">Inicio</a>
+            <a onclick="btnMenu()" href="#sobre" style="--i: 2">Sobre</a>
+            <a onclick="btnMenu()" href="#projeto" style="--i: 3">Projetos</a>
+            <a onclick="btnMenu()" href="#habilidades" style="--i: 4">Habilidades</a>
+            <a onclick="btnMenu()" href="#infor__carreira__e__academica" style="--i: 4">Carreira e Academica</a>
+            <a onclick="btnMenu()" href="#contato" style="--i: 5">Contato</a>
          </nav>
+         <div onclick="btnMenu()" class="btn_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
       </header>
 
       <main id="inicio">
@@ -50,10 +52,7 @@
             <h1>Marcos Kaynan</h1>
             <h3>Sou <span>Desenvolvedor Frontend</span></h3>
             <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-               officiis minus placeat voluptas voluptatum quisquam vitae earum
-               exercitationem, recusandae nam libero perspiciatis, incidunt
-               officia sit iste nobis autem sed et?
+               Desenvolvedor frontend e técnico em redes de computadores, com habilidades em design. Trabalho na criação de interfaces web intuitivas e responsivas, sempre buscando as últimas tendências do desenvolvimento para oferecer soluções eficazes e inovadoras que realmente atendam às necessidades dos usuários.
             </p>
             <div class="social__media">
                <a href="https://www.instagram.com/marcoskdev/" style="--i: 6"
@@ -103,18 +102,41 @@
                <h3 id="title__projetos"></h3>
             </div>
             <nav class="navbar__projeto">
-               <button class="active">
+               <button id="btnTelaFrontend">
                   <i class="bx bxs-window-alt"></i>
                   Front-end
                </button>
-               <button id="btn__design">
+               <button id="btnTelaDesign">
                   <i class="fa-brands fa-figma"></i>
                   UI Design
                </button>
             </nav>
          </div>
 
-         <div class="container__projeto esconder__projeto">
+         <div id="telaFrontend" class="container__projeto ativa">
+            <div class="box__p">
+               <img
+                  class="capa__projeto"
+                  src="assets/img/Banner-projeto-GAMER-LOGISTIC-ROAD.png"
+                  alt=""
+               />
+               <h3>Sobre:</h3>
+               <p>
+                  Como último desafio do Programa Inova Maranhão, nossa equipe de 10 membros desenvolveu o jogo "LOGISTIC ROAD", que visa
+                  facilitar a conexão entre produtores e consumidores. Além disso, criamos uma landing page para o cadastro de novos
+                  jogadores. O tema fornecido pelos instrutores foi “Conexão dos Produtores de Orgânicos a Consumidores”. O Maranhão, um
+                  grande produtor rural, enfrenta desafios significativos para que seus produtos cheguem ao consumidor final, incluindo
+                  questões estruturais, logísticas e econômicas.
+               </p>
+               <a href="https://logisticroad-tiagodlbs-projects.vercel.app">Clique aqui para ver o projeto</a><br>
+               <a href="https://github.com/MarcoskDev/Desafio-4">Clique aqui para ver o projeto no GitHub</a>
+               <div class="linguagens__utilizadas">
+                  <span>html</span>
+                  <span>css</span>
+                  <span>js</span>
+               </div>
+            </div>
+
             <div class="box__p">
                <img
                   class="capa__projeto"
@@ -123,7 +145,7 @@
                />
                <h3>Sobre:</h3>
                <p>
-                  Este projeto de To-Do List foi desenvolvido durante o desafio do Programa Trilhas - Inova Maranhão 
+                  Este projeto de To-Do List foi desenvolvido durante o desafio do Programa Trilhas - Inova Maranhão
                   para demonstrar o que aprendemos durante o programa. <br><br>
                   A aplicação web de gerenciamento de tarefas (To-Do List) foi construída com React, TypeScript e CSS. Ela permite que você adicione, edite, conclua e remova tarefas facilmente. Quando uma tarefa é concluída, ela é movida para uma seção específica e pode ser retornada à lista principal se necessário. O projeto também inclui alertas animados que informam sobre a criação, edição, conclusão e remoção de tarefas, garantindo uma experiência do usuário agradável.
                </p>
@@ -145,9 +167,9 @@
                />
                <h3>Sobre:</h3>
                <p>
-                  Fokus é uma página web que facilita a organização do dia a dia. Com ela, você pode gerenciar 
-                  suas tarefas, definir prioridades e acompanhar o progresso, tudo de forma simples e eficiente. 
-                  A interface é fácil de usar, e o design se adapta a qualquer dispositivo, ajudando você a se 
+                  Fokus é uma página web que facilita a organização do dia a dia. Com ela, você pode gerenciar
+                  suas tarefas, definir prioridades e acompanhar o progresso, tudo de forma simples e eficiente.
+                  A interface é fácil de usar, e o design se adapta a qualquer dispositivo, ajudando você a se
                   concentrar no que realmente importa.
                </p>
                <a href="https://marcoskdev.github.io/projeto-fokus-curso-alura/">Clique aqui para ver o projeto</a><br>
@@ -177,6 +199,31 @@
                   <span>javaScript</span>
                </div>
             </div>
+         </div>
+
+         <div id="telaDesign" class="container__projeto">
+            <h2>Trabalhando nisso...</h2>
+            <!-- <div class="box__p">
+               <img
+                  class="capa__projeto"
+                  src="assets/img/Banner-projeto-TaskList-MA.png"
+                  alt=""
+               />
+               <h3>Sobre:</h3>
+               <p>
+                  Este projeto de To-Do List foi desenvolvido durante o desafio do Programa Trilhas - Inova Maranhão
+                  para demonstrar o que aprendemos durante o programa. <br><br>
+                  A aplicação web de gerenciamento de tarefas (To-Do List) foi construída com React, TypeScript e CSS. Ela permite que você adicione, edite, conclua e remova tarefas facilmente. Quando uma tarefa é concluída, ela é movida para uma seção específica e pode ser retornada à lista principal se necessário. O projeto também inclui alertas animados que informam sobre a criação, edição, conclusão e remoção de tarefas, garantindo uma experiência do usuário agradável.
+               </p>
+               <a href="https://marcoskdev.github.io/projeto-fokus-curso-alura/">Clique aqui para ver o projeto</a><br>
+               <a href="https://github.com/MarcoskDev/projeto-fokus-curso-alura?tab=readme-ov-file">Clique aqui para ver o projeto no GitHub</a>
+               <div class="linguagens__utilizadas">
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>CSS</span>
+                  <span>LocalStorage</span>
+               </div>
+            </div> -->
          </div>
       </section>
 
@@ -216,36 +263,7 @@
             <div class="carreira__e__academica">
                <div class="titulo__carreira">
                   <h3>Área profissional</h3>
-                  <h4>2016 · Atualmente</h4>
-               </div>
-               <div class="box__carreira__e__academica">
-                  <h3>Desenvolvedor Front-end na Ensinio</h3>
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Similique nesciunt reiciendis natus enim. Iste laborum
-                     expedita nisi assumenda ad labore, et, quia, magnam quod
-                     amet illo! Debitis pariatur dolor veniam.
-                  </p>
-
-                  <div class="tempo__carreira__e__academica">
-                     <span>1 ano e 7 meses</span>
-                     <span>Abril/2021 · Atualmente</span>
-                  </div>
-               </div>
-
-               <div class="box__carreira__e__academica">
-                  <h3>Desenvolvedor Front-end na Ensinio</h3>
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Similique nesciunt reiciendis natus enim. Iste laborum
-                     expedita nisi assumenda ad labore, et, quia, magnam quod
-                     amet illo! Debitis pariatur dolor veniam.
-                  </p>
-
-                  <div class="tempo__carreira__e__academica">
-                     <span>1 ano e 7 meses</span>
-                     <span>Abril/2021 · Atualmente</span>
-                  </div>
+                  <h4>2024 · Atualmente</h4>
                </div>
 
                <div class="box__carreira__e__academica">
@@ -267,10 +285,10 @@
             <div class="carreira__e__academica academica">
                <div class="titulo__academica">
                   <h3>Acadêmica</h3>
-                  <h4>2014 · Atualmente</h4>
+                  <h4>2022 - 2023 e 2024 <!-- · Atualmente --></h4>
                </div>
                <div class="box__carreira__e__academica">
-                  <h3>Técnico, Redes de Computadores</h3>
+                  <h3>IEMA - Instituto Estadual de Educação, Ciência e Tecnologia do Maranhão.</h3>
                   <p>
                      Em 2024, formei-me em Técnico em Redes de Computadores pelo
                      IEMA - Axixá. Durante o curso, adquiri conhecimentos
@@ -289,17 +307,15 @@
                </div>
 
                <div class="box__carreira__e__academica">
-                  <h3>Inglês · Conversação básico</h3>
+                  <h3>Programa Inova Maranhão - Eixo Startups da Secretaria da Ciência,
+                     Tecnologia e Inovação do Maranhão - SECTI e FAPEMA.</h3>
                   <p>
-                     No primeiro semestre de 2024, pude aprimorar meu nível de
-                     inglês (Hoje: básico) com um ano de curso de conversação no
-                     IEMA - Axixá, parte do Instituto Estadual de Educação,
-                     Ciência e Tecnologia do Maranhão (IEMA).
+                     Participei do Programa Trilhas Inova em Programação Front-End, onde colaborei em equipe no desenvolvimento de uma landing page para um jogo. A página permite que os jogadores criem suas contas e acessem o jogo através dessa interface.
                   </p>
 
                   <div class="tempo__carreira__e__academica">
-                     <span>1 ano</span>
-                     <span>Básico</span>
+                     <span>8 meses</span>
+                     <span>22/01/2024 a 31/08/2024 - Bolsista.</span>
                   </div>
                </div>
 
@@ -312,7 +328,7 @@
                   </p>
 
                   <div class="tempo__carreira__e__academica">
-                     <span></span>
+                     <span>3 anos</span>
                      <span>Dez/2024 · Formado</span>
                   </div>
                </div>
@@ -320,14 +336,15 @@
          </div>
       </section>
 
-      <form id="contato" action="" method="post">
+      <form id="contato" action="https://formsubmit.co/marcoskaynan1@gmail.com" method="post">
          <h2>📬 Contatos</h2>
          <h3>Vamos conversar!</h3>
          <div class="container__contato">
             <div class="input__contato">
-               <input type="text" placeholder="Seu nome" required />
-               <input type="email" placeholder="Seu email" required />
-               <textarea placeholder="Sua mensagem"></textarea>
+               <input type="text" name="name" placeholder="Seu nome" required />
+               <input type="email" name="email" placeholder="Seu email" required />
+               <textarea type="text" name="message" placeholder="Sua mensagem"></textarea>
+<!--                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
                <button class="btn__enviar__msg__ctt" type="submit">
                   Enviar
                </button>

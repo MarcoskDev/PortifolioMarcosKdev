@@ -6,8 +6,12 @@
    padding: 0;
    box-sizing: border-box;
    font-family: var(--font);
-   scroll-behavior: smooth;
    scrollbar-color: #0099ff #252121;
+}
+
+html {
+   scroll-behavior: smooth;
+   height: 100%;
 }
 
 :root {
@@ -25,7 +29,7 @@
    padding: 20px 5%;
    border-bottom: 2px solid var(--bg-color2);
    position: fixed;
-   z-index: 100;
+   z-index: 9000000000;
 }
 
 .cabecalho > .logo {
@@ -39,9 +43,11 @@
 
 .cabecalho > .navbar > a {
    color: #fff;
-   font-size: 15px;
+   font-size: 14px;
    font-weight: 500;
+   letter-spacing: 1px;
    text-decoration: none;
+   font-family: var(--font);
    margin-right: 1rem;
    display: inline-block;
    position: relative;
@@ -68,6 +74,26 @@
 .cabecalho > .navbar > a:hover {
    color: var(--color-complementar);
 }
+
+.cabecalho > .btn_menu{
+   width: 45px;
+   height: 45px;
+   background-color: var(--bg-color2);
+   border-radius: 10px;
+   display: none;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 5px;
+   cursor: pointer;
+ }
+
+ .btn_menu > span{
+    width: 30px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 5px;
+ }
 
 /* Início */
 #inicio {
@@ -270,15 +296,20 @@
    border: 1px solid var(--bg-color2);
 }
 
-#projeto > .container__projeto {
+#projeto > .container__projeto.ativa {
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
    gap: 1.3rem;
 }
 
+#projeto > .container__projeto {
+   display: none;
+}
+
 .container__projeto > .box__p {
-   width: 17rem;
+   width: 20rem;
+   height: auto;
    border: 1px solid var(--color-complementar);
    border-radius: 10px;
    padding: 20px;
@@ -620,30 +651,37 @@ footer > p {
 @media (max-width: 820px) {
    .cabecalho {
       height: 4rem;
+      align-items: center;
    }
 
    .cabecalho > .navbar {
       width: 15rem;
       height: 100vh;
-      background-color: #c71515;
+      background-color: var(--bg-color2);
       position: absolute;
+      top: 0;
       right: 0;
-      top: 2rem;
-      display: flex;
-      align-items: center;
+      display: none;
       justify-content: center;
       flex-direction: column;
       gap: 2rem;
-      z-index: -2000;
+      z-index: -2;
    }
-   .cabecalho > .navbar.ativo {
-      display: none;
+
+   .cabecalho > .navbar.mostra_navbar {
+      display: flex;
+      flex-direction: column;
    }
 
    .cabecalho > .navbar > a {
+      text-align: left;
       padding: 0.7rem 2.5rem;
       border-radius: 10px;
       border: none;
+   }
+
+   .cabecalho > .btn_menu{
+      display: flex;
    }
 
    #inicio {
